@@ -14,7 +14,7 @@ void setup() {
 }
 
 void loop() {
-  // looping over all lights in red
+  // looping over all lights in blue
   for(int i = 2; i <= 13; i++) {
     if(i%2 == 1) {
       digitalWrite(i, LOW);
