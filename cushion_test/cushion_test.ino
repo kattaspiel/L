@@ -7,8 +7,8 @@ RCSwitch receiver = RCSwitch();
 
 void setup() {
   pinMode(VIBRO_PIN, OUTPUT);
-  Serial.begin(19200);
-  receiver.enableReceive(1); //PIN 2 for wiring
+  Serial.begin(9600);
+  receiver.enableReceive(0); //PIN 2 for wiring
 }
 
 void loop() {
