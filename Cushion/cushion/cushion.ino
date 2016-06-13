@@ -1,5 +1,5 @@
 #include <RCSwitch.h>
-#define VIBRO_PIN 9
+#define VIBRO_PIN 6
 #define VIBRO_ON 2
 #define VIBRO_OFF 65
 RCSwitch receiver = RCSwitch(); 
@@ -7,8 +7,8 @@ RCSwitch receiver = RCSwitch();
 
 void setup() {
   pinMode(VIBRO_PIN, OUTPUT);
-  Serial.begin(19200);
-  receiver.enableReceive(1); //PIN 2 for wiring
+  Serial.begin(115200);
+  receiver.enableReceive(0); //PIN 2 for wiring
 }
 
 void loop() {
