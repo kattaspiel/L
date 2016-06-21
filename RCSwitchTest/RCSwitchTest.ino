@@ -1,6 +1,6 @@
 #include <RCSwitch.h>  
 RCSwitch sender = RCSwitch(); 
-int sendPIN = 10;
+int sendPIN = 2;
 
 void setup()
 {

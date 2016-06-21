@@ -1,7 +1,7 @@
 #include <RCSwitch.h>
 #define VIBRO_PIN 6
 #define VIBRO_ON 2
-#define VIBRO_OFF 65
+#define VIBRO_OFF 8
 RCSwitch receiver = RCSwitch(); 
 
 
@@ -15,7 +15,7 @@ void loop() {
   if(receiver.available()){
     debug();
     if(receiver.getReceivedValue() == VIBRO_ON){
-      while(receiver.getReceivedValue() != VIBRO_OFF){
+      while(receiver.getReceivedBitlength() != VIBRO_OFF){
         debug();
         Serial.println("Vibro on");
         digitalWrite(VIBRO_PIN, HIGH);
